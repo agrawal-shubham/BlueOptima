@@ -1,0 +1,125 @@
+body {
+    padding: 2em;
+    margin: 0 auto;
+}
+
+ul, li, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-box {
+    padding: 4px;
+    margin: 8px 0;
+    background: #fff;
+    line-height: 22px;
+    box-shadow: 0px 0px 1px #000;
+    border-radius: 3px;
+}
+
+.search-box input {
+    border: none;
+    width: calc(100% - 20px);
+}
+
+i {
+    color: #4f81bd;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.location-widget {
+    width: 300px;
+    padding: 1em;
+    background: #f2f2f2;
+}
+
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    padding: 1em;
+    margin-top: 0.35em;
+}
+
+.flag {
+    width: 10px;
+    height: 10px;
+}
+
+ul {
+    list-style: none;
+} 
+
+.vertical-collapsed {
+    width: 40px;
+}
+
+.vertical-collapsed h3 {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    margin-top: 20px;
+}
+
+.vertical-collapsed .widget-header {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.search-results {
+    position: relative;
+}
+
+.results-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.letter-indexes {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 9px;
+    font-family: sans-serif;
+}
+
+.index {
+    cursor: pointer;
+}
+
+.index:hover {
+    color: #4f81bd;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+    padding-right: 10px;
+}
+
+.city-name {
+    width: 200px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
